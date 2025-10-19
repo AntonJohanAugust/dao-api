@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dao-api"
+version = "0.1.0"
+packages = [{include = "api_core"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.0"
+sqlalchemy = "^2.0.30"
+aiosqlite = "^0.20.0"
+pydantic = "^2.7.4"
+pydantic-settings = "^2.2.1"
+marshmallow = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
