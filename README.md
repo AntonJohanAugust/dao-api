@@ -4,31 +4,32 @@
 
 Ensure you have the following installed on your system:
 
-1. **Python (^3.11)**
+1. **python (^3.11)**
 
-2. **Poetry**
+2. **poetry**
+
+3. **docker**
 
 ## 🛠️ Setup and Installation
 
 Follow these steps to set up:
 
 ### 1. Clone the Repository
-### 2. Install Dependencies
-
-`poetry install`
 
 
-### 3. ▶️ Running the Application
+### 2. ▶️ Run the Application
 
 The application is served using **uvicorn**
 
-To start the server, execute the following command:
+To start the server, execute the following command in a terminal from the root of the project:
 
-`poetry run uvicorn api_core.main:app`
+`python start_api_server.py`
+
+(the python executable might be called something different)
 
 
-### 4. Access
+### 3. Testing the application
 
-Once the server is running, the API should be accessible at:
+Run the included docker image in a separate terminal from the root of the project
 
-**`http://127.0.0.1:8000`**
+`python start_container.py`
